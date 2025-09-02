@@ -1,16 +1,16 @@
 * reviip
-a simple python script to recreate an image displayed on a website using [[https://iipimage.sourceforge.io/documentation/iipmooviewer][IIPMoo]]
+a simple python script to recreate an image displayed on a website using [[https://iipimage.sourceforge.io/documentation/iipmooviewer][IIPMoo]].
 
 * usage
 ** install dependencies
-first clone or download and extract this repo, then run this command in the root directory of reviip
+first clone or download and extract this repo, then run this command in the root directory of reviip.
 #+BEGIN_SRC shell
 pip install -r requirements.txt
 #+END_SRC
 
 ** running reviip
-make sure python is installed and just run the reviip.py file in the directory it's contained in
-zoom into the image fully and then use inspect element to grab the url of any tile (reviip will ask for this url when ran)
+make sure python is installed and just run the reviip.py file in the directory it's contained in.
+zoom into the image fully and then use inspect element to grab the url of any tile (reviip will ask for this url when ran).
 #+BEGIN_SRC shell
 python reviip.py
 #+END_SRC
