@@ -14,3 +14,4 @@ zoom into the image fully and then use inspect element to grab the url of any ti
 #+BEGIN_SRC shell
 python reviip.py
 #+END_SRC
+[[./example.png]]

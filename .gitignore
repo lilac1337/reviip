@@ -2,6 +2,7 @@
 *.*
 
 !.gitignore
+!example.png
 !reviip.py
 !requirements.txt
 !README.org
