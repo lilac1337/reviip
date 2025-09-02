@@ -1,0 +1,7 @@
+*/
+*.*
+
+!.gitignore
+!reviip.py
+!requirements.txt
+!README.org
