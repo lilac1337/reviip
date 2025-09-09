@@ -6,6 +6,7 @@ import os
 import requests
 from urllib.parse import urlparse, parse_qs
 from PIL import Image
+from natsort import natsorted
 
 print("please zoom into the image fully, then grab the url of a tile through inspect element or other means")
 url = input("paste the url here: ")
@@ -88,8 +89,10 @@ def concatenateFrames():
     baseWidth = 0 # this should always been 256 but we might as well check
     framesPerRow = 0
     firstImage = True
+
+    files = os.listdir(folderPath)
     
-    for f in os.listdir(folderPath):
+    for f in natsorted(files): # os.listdir(folderPath):
         imagePath = os.path.join(folderPath, f)
 
         if not os.path.isfile(imagePath):
@@ -97,7 +100,7 @@ def concatenateFrames():
         
         with Image.open(imagePath) as img:
             width, height = img.size
-
+            print(f"{int(f)} {width}")
             if firstImage:
                 baseWidth = width
                 print(f"found tile width: {width}")
