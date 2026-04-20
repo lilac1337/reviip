@@ -1,5 +1,5 @@
-# written by a very intoxicated lovelace on 5/27/2025
-# finished by a slightly less intoxicated lovelace on 8/31/2025
+# written on 5/27/2025
+# finished on 8/31/2025
 # thanks ken <3
 
 import os
@@ -84,7 +84,7 @@ def concatenateHorizontally(imgs):
 
     return image    
     
-# check if frame sizes and concatonate accordinatly (i was really drunk, holy shit)
+# check frame sizes and concatonate accordingly
 def concatenateFrames():
     baseWidth = 0 # this should always been 256 but we might as well check
     framesPerRow = 0
